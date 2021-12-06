@@ -14,6 +14,31 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
+  display: flex;
+  box-sizing: border-box;/*отрисовывает элементы внутри бокса*/
+  border: 2px solid red;/*потом удалить*/
+}
+
+.header_absolute {
+  position: absolute;
+}
+
+.logo {
+  z-index: 1;
+  width: 183px;
+  height: 32px;
+  border: 2px solid red;/*потом удалить*/
+}
+
+.logo_place_header {
+  top: 30px;
+  left: 64px;
+}
+
+.title {
+  margin:0 auto;
+  
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
