@@ -27,24 +27,19 @@
   position: absolute;
 }
 
-.header {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-
-  /* выше установили ограничения для секции */
-  background-color: #f2f2f2;
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;/*отрисовывает элементы внутри бокса*/
-  border: 2px solid red;/*потом удалить*/
+.header_position_overlay {
+  z-index: 2;
 }
 
+.header_position_basiclay {
+  z-index: 1;
+}
+
+.header_position_underlay {
+  z-index: 0;
+}
 
 .logo {
-  z-index: 1;
   width: 183px;
   height: 32px;
   border: 2px solid red;/*потом удалить*/
@@ -55,16 +50,29 @@
   left: 64px;
 }
 
+.header {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;/*отрисовывает элементы внутри бокса*/
+  border: 2px solid red;/*потом удалить*/
+}
+
 .header__title {
   display: flex;
   align-items: center;
   padding-left: 64px;
-  max-width: 730px; 
+  max-width: 730px;
 }
 
 .header__subtitle {
   width: 388px;
-  z-index: 1;
   left: 64px;
   bottom: 30px; 
 }
@@ -76,7 +84,6 @@
 .header__main-illustration {
   width: 765px;
   height: 608px;
-  z-index: 2;
   right: 0;
   bottom: 0;
 }
@@ -91,7 +98,6 @@
   height: 568px;
   width: 568px;
   background-color: #2f80ed;
-  z-index: 1;
   top: 64px;
   right: 0;
   }
