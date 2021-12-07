@@ -8,17 +8,21 @@
   <title>Научиться учиться</title>
 </head>
 <body>
-  <div class="page">
-    <header class="header">
-      <logo class="logo header_absolute logo_place_header">
+  <div class="page flex-column">
+    <header class="header position_relative flex-row">
+      <div class="logo position_absolute logo_place_header">
         <img src="./images/logo_place_header.svg" alt="Логотип">
-      </logo>
-      <title>Научиться учиться</title>
-      <subtitle>Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?</subtitle>
-        <link >
-      <main-illustration>
-      <square-pic class="header_absolute header_square-pic"></square-pic>
-    </header>
+      </div>
+      <h1 class="header__title">Научиться учиться</h1>
+      <h2 class="header__subtitle position_absolute">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
+        <a class="header__link" href="#">Узнать</a>
+      </h2>
+      <div class="header__main-illustration position_absolute">
+        <img class="header__image" src="images/header-image.png" alt="Фрагмент картины Опять двойка">
+      </div>
+      <div class="header__square-pic position_absolute">
+      </div>
+      </header>
     <main class="content">
       <section class="description">
       </section> 
@@ -33,7 +37,7 @@
       </section>
     </main>
     <footer class="footer">
-      <logo class="logo"></logo>
+      <div class="logo logo_place_footer"></div>
 
     </footer>
   </div>
