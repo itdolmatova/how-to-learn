@@ -11,14 +11,20 @@
 }
 
 .flex-row {
-  
+  display: flex;
 }
+
+.flex-row-space-between {
+  justify-content: space-between;
+} /* для .footer__columns*/
 
 .flex-column {
-  justify-content: space-between;/*спорно*/
+  display: flex;
 }
 
-
+.flex-column-space-between {
+  justify-content: space-between;
+}
 .position_relative {
   position: relative;
 }
@@ -41,13 +47,16 @@
 
 .logo {
   width: 183px;
-  height: 32px;
   border: 2px solid red;/*потом удалить*/
 }
 
 .logo_place_header {
   top: 30px;
   left: 64px;
+}
+
+.logo_height_header {
+  height: 32px;
 }
 
 .header {
@@ -59,7 +68,6 @@
   /* выше установили ограничения для секции */
   background-color: #f2f2f2;
   display: flex;
-  flex-direction: row;
   box-sizing: border-box;/*отрисовывает элементы внутри бокса*/
   border: 2px solid red;/*потом удалить*/
 }
@@ -69,16 +77,23 @@
   align-items: center;
   padding-left: 64px;
   max-width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
 }
 
 .header__subtitle {
   width: 388px;
   left: 64px;
   bottom: 30px; 
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .header__link {
   text-decoration: none;
+  color: #2f80ed;
 }
 
 .header__main-illustration {
@@ -112,11 +127,81 @@
 
 .footer {
   margin: 0;
-  padding: 60px 0 40px 0;
+  padding: 0;
+  /* обнуляю отспуты по уровне блока*/
+  display: flex;
+  margin: auto;/*центрировать по горизонтали */
+  min-height: 350px;
+  width: 100vw;
+  flex-basis: 711px;
+  box-sizing: border-box;/*отрисовывает элементы внутри бокса*/
+  border: 2px solid red;/*потом удалить*/
   background-color: black;
   color: white;
-  min-height: 350px;
-  width: 90%; 
+}
+
+.footer__columns {
   display: flex;
-  flex-basis: 711px;
+  width: 90%;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer__column_content_copyright {
+  ;
+}
+
+.logo_height_footer {
+  height: 35px;
+}
+
+.logo_place_footer {
+  margin: 0;
+}
+
+.logo_image_footer {
+  margin: 0;
+  background-image: url('/images/logo_place_footer.svg');
+}
+
+.footer__author {
+  padding: 18px 0 18px 0;
+  text-align: left;
+  border: 1px solid tomato;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  border: 1px solid red; /*потом удалить*/
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid red; /*потом удалить*/
+}
+
+.footer__column-link {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  color: white;
+  height: 10px;
+  border: 1px solid red; /*потом удалить*/
+}
+.footer__social-icons {
+  width: 16px;
+  height: 16px;
+
+/*вариант подключения иконок соцсетей.footer__social-icons-facebook {
+  width: 16px;
+  height: 16px;
+  background-image: url('/images/facebook_color_white.svg');
 }

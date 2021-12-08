@@ -8,13 +8,13 @@
   <title>Научиться учиться</title>
 </head>
 <body>
-  <div class="page flex-column">
+  <div class="page">
     <header class="header position_relative flex-row">
-      <div class="logo position_absolute logo_place_header header_position_overlay">
+      <div class="logo position_absolute logo_place_header header_position_overlay logo_height_header">
         <img src="./images/logo_place_header.svg" alt="Логотип">
       </div>
       <h1 class="header__title header_position_overlay">Научиться учиться</h1>
-      <h2 class="header__subtitle position_absolute header_position_overlay">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?<a class="header__link" href="#">Узнать &#8594;</a></h2>
+      <h2 class="header__subtitle position_absolute header_position_overlay">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a class="header__link" href="#">Узнать &#8594;</a></h2>
       <div class="header__main-illustration position_absolute header_position_basiclay">
         <img class="header__main-image" src="images/header-image.png" alt="Фрагмент картины Опять двойка">
       </div>
@@ -34,9 +34,30 @@
       <section class="kaufman">
       </section>
     </main>
-    <footer class="footer">
-      <div class="logo logo_place_footer"></div>
-
+    <footer class="footer position-relative flex-row">
+      <ul class="footer__columns flex-row flex-row-space-between list">
+        <li class="footer__column_content_copyright flex-column flex-column-space-between">
+          <li class="logo logo_place_footer logo_height_footer logo_image_footer"></li>
+          <li class="footer__author">&copy 2019. Виктор Абанькин</li>
+        </li>
+        <li class="footer__column_content_info list flex-column">
+          <h4 class="footer__column-heading">О Практикуме</h4>
+          <ul class="footer__column-links list">
+            <!--три пункта-->
+            <li class="list"><h5 class="footer__column-link" href="#">Главная</h5></li>
+            <li class="list"><h5 class="footer__column-link" href="#">Концепция</h5></li>
+            <li class="list"><h5 class="footer__column-link" href="#">Наставники</h5></li>
+          </ul>
+        </li>
+        <li class="footer__column_social list flex-column">
+          <ul class="list"><h4 class="footer__column-heading">Соцсети</h4>
+            <li class="list footer__column-link"><a class="footer__column-link" href="#"><img class="footer__social-icons" src="/images/facebook_color_white.svg" alt="?">Facebook</a></li>
+            <!--<li class="list"><a class="footer__column-link-facebook">Facebook</a></li>-->
+            <li class="list"><a class="footer__column-link" href="#"><img class="footer__social-icons" src="/images/vk_color_white.svg">ВКонтакте</a></li>
+            <li class="list"><a class="footer__column-link" href="#"><img class="footer__social-icons" src="/images/instagram_color_white.svg">Instagrem</a></li>
+          </ul>  
+        </li>
+      </ul>
     </footer>
   </div>
 </body>
