@@ -1,0 +1,83 @@
+
+
+.footer {
+    margin: 0;
+    padding: 0;
+    /* обнуляю отспуты по уровне блока*/
+    display: flex;
+    justify-content: center;
+    margin: auto;/*центрировать по горизонтали */
+    min-height: 350px;
+   
+    box-sizing: border-box;/*отрисовывает элементы внутри бокса*/
+    border: 2px solid red;/*потом удалить*/
+    background-color: black;
+    color: white;
+  }
+  
+  .footer__columns {
+    display: flex;
+    flex-basis: 711px;
+    flex-grow: 1;
+    max-width: 90%;
+    margin-top: 60px auto 40 px auto;
+    border: 1px solid blue;
+  }
+  
+  .footer__column_content_copyright {
+    width: 50%;
+  }
+  
+  .logo_height_footer {
+    height: 35px;
+  }
+  
+  .logo_place_footer {
+    margin: 0;
+  }
+  
+  .logo_image_footer {
+    margin: 0;
+    background-image: url('/images/logo_place_footer.svg');
+  }
+  
+  .footer__author {
+    margin: 18px auto 18px 0;
+    text-align: left;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: normal;
+    border: 1px solid red; /*потом удалить*/
+  }
+  
+  .list {
+    list-style: none;
+  }
+  
+  .footer__column-heading {
+    margin: 0 0 20px;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid red; /*потом удалить*/
+  }
+  
+  .footer__column-link {
+    margin: 0 0 16px;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+    height: 10px;
+    border: 1px solid red; /*потом удалить*/
+  }
+  .footer__social-icons {
+    width: 16px;
+    height: 16px;
+  
+  /*вариант подключения иконок соцсетей.footer__social-icons-facebook {
+    width: 16px;
+    height: 16px;
+    background-image: url('/images/facebook_color_white.svg');
+  }

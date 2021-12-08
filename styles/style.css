@@ -14,17 +14,27 @@
   display: flex;
 }
 
-.flex-row-space-between {
+.flex-row_space_between {
   justify-content: space-between;
+  border: 1px solid orange;
 } /* для .footer__columns*/
 
 .flex-column {
   display: flex;
+  flex-direction: column;
+  border: 1px solid yellow;
 }
 
-.flex-column-space-between {
+.flex-column_space_between {
+  flex-direction: column; 
   justify-content: space-between;
 }
+
+.flex-column_flex-start {
+  flex-direction: column; 
+  justify-content: flex-start;
+}
+
 .position_relative {
   position: relative;
 }
@@ -59,150 +69,4 @@
   height: 32px;
 }
 
-.header {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  /* выше установили ограничения для секции */
-  background-color: #f2f2f2;
-  display: flex;
-  box-sizing: border-box;/*отрисовывает элементы внутри бокса*/
-  border: 2px solid red;/*потом удалить*/
-}
 
-.header__title {
-  display: flex;
-  align-items: center;
-  padding-left: 64px;
-  max-width: 730px;
-  line-height: 96px;
-  font-size: 102px;
-  font-weight: bold;
-}
-
-.header__subtitle {
-  width: 388px;
-  left: 64px;
-  bottom: 30px; 
-  line-height: 25px;
-  font-size: 18px;
-  font-weight: normal;
-}
-
-.header__link {
-  text-decoration: none;
-  color: #2f80ed;
-}
-
-.header__main-illustration {
-  width: 765px;
-  height: 608px;
-  right: 0;
-  bottom: 0;
-}
-
-.header__main-image {
-  width: 100%;
-  height: 100%;
-}
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-  background-color: #2f80ed;
-  top: 64px;
-  right: 0;
-  }
-
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
-
-.footer {
-  margin: 0;
-  padding: 0;
-  /* обнуляю отспуты по уровне блока*/
-  display: flex;
-  justify-content: center;
-  margin: auto;/*центрировать по горизонтали */
-  min-height: 350px;
- 
-  box-sizing: border-box;/*отрисовывает элементы внутри бокса*/
-  border: 2px solid red;/*потом удалить*/
-  background-color: black;
-  color: white;
-}
-
-.footer__columns {
-  display: flex;
-  flex-basis: 711px;
-  flex-grow: 1;
-  max-width: 90%;
-  margin-top: 60px;
-  margin-bottom: 40px;
-  border: 1px solid blue;
-}
-
-.footer__column_content_copyright {
-  
-}
-
-.logo_height_footer {
-  height: 35px;
-}
-
-.logo_place_footer {
-  margin: 0;
-}
-
-.logo_image_footer {
-  margin: 0;
-  background-image: url('/images/logo_place_footer.svg');
-}
-
-.footer__author {
-  padding: 18px 0 18px 0;
-  text-align: left;
-  border: 1px solid tomato;
-  line-height: 25px;
-  font-size: 18px;
-  font-weight: normal;
-  border: 1px solid red; /*потом удалить*/
-}
-
-.list {
-  list-style: none;
-}
-
-.footer__column-heading {
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: bold;
-  border: 1px solid red; /*потом удалить*/
-}
-
-.footer__column-link {
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal;
-  text-decoration: none;
-  color: white;
-  height: 10px;
-  border: 1px solid red; /*потом удалить*/
-}
-.footer__social-icons {
-  width: 16px;
-  height: 16px;
-
-/*вариант подключения иконок соцсетей.footer__social-icons-facebook {
-  width: 16px;
-  height: 16px;
-  background-image: url('/images/facebook_color_white.svg');
-}
