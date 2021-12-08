@@ -129,12 +129,11 @@
   margin: 0;
   padding: 0;
   /* обнуляю отспуты по уровне блока*/
-  
   display: flex;
   justify-content: center;
   margin: auto;/*центрировать по горизонтали */
   min-height: 350px;
-  width: 100vw;
+ 
   box-sizing: border-box;/*отрисовывает элементы внутри бокса*/
   border: 2px solid red;/*потом удалить*/
   background-color: black;
