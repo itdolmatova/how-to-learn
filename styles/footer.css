@@ -38,7 +38,7 @@
   
   .logo_image_footer {
     margin: 0;
-    background-image: url('/images/logo_place_footer.svg');
+    background-image: url('./images/logo_place_footer.svg');
   }
   
   .footer__author {
