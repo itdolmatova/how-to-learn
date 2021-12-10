@@ -204,11 +204,6 @@
   border: 1px solid red;
 }
 
-.table__heading_theme_dark {
-  color: white;
-  background-color: rgba (0, 0, 0, 0);
-}
-
 .table__text {
   margin-top: 20px;
   margin-bottom: 0;
@@ -217,12 +212,6 @@
   font-weight: normal;  
   border: 1px solid red;
 }
-
-.table__text_theme_dark {
-  color: white;
-  background-color: rgba (0, 0, 0, 0);
-}
-
 
 .feynman {
   margin: 0;
