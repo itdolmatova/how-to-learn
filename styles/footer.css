@@ -1,5 +1,4 @@
 
-
 .footer {
   margin: 0;
   padding: 0;
@@ -59,12 +58,14 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    border: 2px solid red;/*потом удалить*/
   }
 
   .footer__column_content_social {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    border: 2px solid red;/*потом удалить*/
   }
 
   .footer__column-heading {
@@ -89,20 +90,17 @@
     font-weight: normal;
     text-decoration: none;
     color: white;
-    height: 10px;
     border: 1px solid rgb(0, 60, 255); /*потом удалить*/
   }
 
   .footer__column-link:nth-of-type(3n) {
     margin-bottom: 16px;
-  }<!-- вариант добавления 16px отступа снизу на ссылке footer__column-link -->
+  }
 
   .footer__social-icons {
     width: 16px;
     height: 16px;
-  
-  /*вариант подключения иконок соцсетей.footer__social-icons-facebook {
-    width: 16px;
-    height: 16px;
-    background-image: url('/images/facebook_color_white.svg');
+    margin-right: 10px;
+    border: 1px solid red;/*потом удалить*/
   }
+   
