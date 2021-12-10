@@ -1,9 +1,11 @@
 
 
 .footer {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-directiom: row;
-  margin: auto;
+  justify-content: center;
   box-sizing: border-box;
   min-height: 350px;
   border: 2px solid red;/*потом удалить*/
@@ -13,14 +15,23 @@
   
   .footer__columns {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     flex-basis: 711px;
     flex-grow: 1;
     max-width: 90%;
-    margin-top: 60px auto 40 px auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
     border: 1px solid blue;
   }
   
+  
+  .footer_column {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid green;
+  }
+
   .footer__column_content_copyright {
     width: 50%;
     display: flex;
@@ -31,6 +42,7 @@
   .logo_place_footer {
     margin: 0;
     height: 35px;
+    box-sizing: border-box;
     background-image: url('../images/logo_place_footer.svg');
   }
   
@@ -43,24 +55,48 @@
     border: 1px solid red; /*потом удалить*/
   }
   
+  .footer__column_content_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .footer__column_content_social {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
   .footer__column-heading {
-    margin: 0 0 20px;
+    margin: 0 0 20px 0;
     line-height: 30px;
     font-size: 18px;
     font-weight: bold;
     border: 1px solid red; /*потом удалить*/
   }
   
+  .footer__column-links {
+    margin: 0 0 16px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid yellow; /*потом удалить*/
+  }
+
   .footer__column-link {
-    margin: 0 0 16px;
     line-height: 30px;
     font-size: 18px;
     font-weight: normal;
     text-decoration: none;
     color: white;
     height: 10px;
-    border: 1px solid red; /*потом удалить*/
+    border: 1px solid rgb(0, 60, 255); /*потом удалить*/
   }
+
+  .footer__column-link:nth-of-type(3n) {
+    margin-bottom: 16px;
+  }<!-- вариант добавления 16px отступа снизу на ссылке footer__column-link -->
+
   .footer__social-icons {
     width: 16px;
     height: 16px;
