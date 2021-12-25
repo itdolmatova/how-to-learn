@@ -6,4 +6,10 @@
     color: white;
     display: flex;
     align-items: center;
+    opacity: 1;
+    transition: opacity 0.5s ease-in 0s;
+}
+
+.footer__column-link:hover {
+    opacity: 0.6;
 }
