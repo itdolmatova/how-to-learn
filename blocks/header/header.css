@@ -11,4 +11,8 @@
     position: relative;
     box-sizing: border-box;
     z-index: 1;
-  }
+}
+
+/* .header:hover .header__link {
+  opacity: 0.5;
+}  */
