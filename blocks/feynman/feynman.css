@@ -1,15 +1,15 @@
 .feynman {
-    margin: 0;
-    padding: 100px 0 0;
-    min-height: 890px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
-    background-image: url("../../images/feynman.png");
-    background-position: left bottom;
-    background-repeat: no-repeat;
-    background-color: #f2f2f2;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 100px 0 0;
+  min-height: 890px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  background-image: url("../../images/feynman.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+}
