@@ -1,18 +1,11 @@
 .video__iframe {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    bottom: -50px;
-    left: auto;
+  margin: 0 20px 0 0;
+  padding: 0;
+  position: relative;
+  bottom: -50px;
+  left: auto;
 }
 
-/*.video__iframe {
-    margin-right: 20px;
-    width: 515px;
-    height: 316px;
-    outline: 1px solid red;
-  }
-
-  .video__iframe:nth-child(2) {
-    margin-right: 0;
-  }*/
+.video__iframe:nth-child(2) {
+  margin-right: 0;
+}
