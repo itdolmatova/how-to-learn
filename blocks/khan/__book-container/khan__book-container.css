@@ -5,4 +5,5 @@
     align-items: flex-start;
     margin: 68px 0 0;
     padding: 0;
+    overflow-y: hidden;
 }
